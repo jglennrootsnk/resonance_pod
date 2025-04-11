@@ -34,7 +34,7 @@ class _MiniPlayerState extends State<MiniPlayer> {
             color: Theme.of(context).cardColor,
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withOpacity(0.1),
+                color: Colors.black.withValues(alpha: 0.1),
                 blurRadius: 4,
                 offset: const Offset(0, -1),
               ),
@@ -79,7 +79,7 @@ class _MiniPlayerState extends State<MiniPlayer> {
                               child: Container(
                                 padding: const EdgeInsets.all(2),
                                 decoration: BoxDecoration(
-                                  color: Colors.black.withOpacity(0.7),
+                                  color: Colors.black.withValues(alpha: 0.7),
                                   borderRadius: BorderRadius.circular(4),
                                 ),
                                 child: const Icon(
@@ -174,7 +174,7 @@ class _MiniPlayerState extends State<MiniPlayer> {
       context: context,
       isScrollControlled: true,
       backgroundColor: Colors.transparent,
-      builder: (context) => PlayerBottomSheet(),
+      builder: (context) => const PlayerBottomSheet(),
     );
   }
 }
